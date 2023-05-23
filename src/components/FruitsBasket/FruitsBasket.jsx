@@ -25,6 +25,11 @@ export const FruitsBasket = () => {
         setFruits={setFruits}
         setSelectedFruitDetails={setSelectedFruitDetails}
       />
+      {!!selectedFruits.length && (
+        <>
+          <S.HorizontalDivider />
+        </>
+      )}
     </S.FruitsBasketContainer>
   );
 };
