@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import { useState } from 'react';
 import { toast } from 'react-toastify';
 import * as S from './Dropdown.style';

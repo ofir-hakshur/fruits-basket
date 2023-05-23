@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import { BasketItem } from './BasketItem';
 import * as S from './BasketItems.style';
 
