@@ -1,8 +1,10 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useContext } from 'react';
+import { AppContext } from '../../../../App.context';
 import * as S from './BasketItem.style';
 
-export const BasketItem = ({ fruit, setSelectedFruits, setFruits, setSelectedFruitDetails }) => {
+export const BasketItem = ({ fruit }) => {
   const [quantity, setQuantity] = useState(0);
+  const { setSelectedFruits, setFruits, setSelectedFruitDetails } = useContext(AppContext);
 
   const handleOnRemove = () => {
     setSelectedFruits((prev) => [...prev].filter((e) => e.id !== fruit.id));

@@ -1,9 +1,11 @@
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 import { toast } from 'react-toastify';
+import { AppContext } from '../../../App.context';
 import * as S from './Dropdown.style';
 
-export const Dropdown = ({ fruits, setFruits, setSelectedFruits }) => {
+export const Dropdown = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const { fruits, setFruits, setSelectedFruits } = useContext(AppContext);
 
   const handleOnClick = async (fruitName) => {
     try {
