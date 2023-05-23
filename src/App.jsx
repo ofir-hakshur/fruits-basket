@@ -1,5 +1,8 @@
+import { FruitsBasket } from './components/FruitsBasket/FruitsBasket';
+import 'react-toastify/dist/ReactToastify.css';
+
 function App() {
-  return <div>App</div>;
+  return <FruitsBasket />;
 }
 
 export default App;
